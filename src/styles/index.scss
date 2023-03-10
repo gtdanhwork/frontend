@@ -1,4 +1,4 @@
-$font-base: Arial, Helvetica, sans-serif;
+@import '../variables/variables.scss';
 
 .siteContainer {
   display: flex;
@@ -31,82 +31,6 @@ $font-base: Arial, Helvetica, sans-serif;
 
         .navCategories {
           padding: 0 90px;
-        }
-      }
-    }
-
-    .formSearch {
-      font-family: $font-base;
-      font-size: 24px;
-
-      align-items: center;
-      margin: 70px 0;
-
-      .formSearchBar {
-        display: flex;
-        justify-content: center;
-
-        .formSearchInput {
-          display: flex;
-          align-items: center;
-
-          .formInput {
-            display: flex;
-
-            background-color: #f9f9f9;
-
-            border: 1px #d1d1d1 solid;
-            border-radius: 20px;
-
-            padding: 10px 15px;
-
-            .formDropdown {
-              font-weight: 700;
-            }
-
-            .formVerticalDiv {
-              border-left: 1px #d1d1d1 solid;
-              margin: 0 11px;
-            }
-
-            .formInputKey {
-              display: flex;
-
-              border: none;
-              background: none;
-              outline: none;
-
-              font-size: 24px;
-              width: 560px;
-            }
-            .formSearchIcon {
-              border: none;
-              background: none;
-              outline: none;
-
-              cursor: pointer;
-
-              img {
-                width: 15px;
-                height: 15px;
-              }
-            }
-          }
-
-          .formCartIcon {
-            border: none;
-            background: none;
-            outline: none;
-
-            cursor: pointer;
-
-            margin-left: 30px;
-
-            img {
-              width: 30px;
-              height: 30px;
-            }
-          }
         }
       }
     }
