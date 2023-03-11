@@ -1,5 +1,6 @@
 import './App.css';
 import SearchBox from './components/SearchBox';
+import CategoriesMenu from './components/CategoriesMenu';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <h3>Account</h3>
         </div>
         <SearchBox />
+        <CategoriesMenu />
       </header>
       <main>Tester</main>
       <footer>
