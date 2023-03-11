@@ -12,63 +12,69 @@
   .formSearchInput {
     display: flex;
     align-items: center;
+    background-color: #f9f9f9;
 
-    .formInput {
-      display: flex;
+    border: 1px #d1d1d1 solid;
+    border-radius: 20px;
 
-      background-color: #f9f9f9;
+    padding: 10px 15px;
 
-      border: 1px #d1d1d1 solid;
-      border-radius: 20px;
-
-      padding: 10px 15px;
-
-      .formDropdown {
-        font-weight: 700;
-      }
-
-      .formVerticalDiv {
-        border-left: 1px #d1d1d1 solid;
-        margin: 0 11px;
-      }
-
-      .formInputKey {
-        display: flex;
-
-        border: none;
-        background: none;
-        outline: none;
-
-        font-size: 24px;
-        width: 560px;
-      }
-      .formSearchIcon {
-        border: none;
-        background: none;
-        outline: none;
-
-        cursor: pointer;
-
-        img {
-          width: 15px;
-          height: 15px;
-        }
-      }
+    .removeBorder {
+      outline: none;
+      background: none;
+      border: none;
+    }
+  
+    .padding-margin {
+      font-family: $font-base;
+      font-size: 18px;
+      padding-right: 10px;
     }
 
-    .formCartIcon {
+    .formDropdown {
+      font-weight: 700;
+    }
+
+    .formVerticalDiv {
+      border-left: 1px #d1d1d1 solid;
+      margin: 0 11px;
+    }
+
+    .formInputKey {
+      display: flex;
+
+      border: none;
+      background: none;
+      outline: none;
+
+      font-size: 24px;
+      width: 560px;
+    }
+    .formSearchIcon {
       border: none;
       background: none;
       outline: none;
 
       cursor: pointer;
 
-      margin-left: 30px;
-
       img {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
       }
+    }
+  }
+  .formCartIcon {
+    border: none;
+    background: none;
+    outline: none;
+
+    cursor: pointer;
+
+    margin-left: 30px;
+
+    img {
+      width: 30px;
+      height: 30px;
     }
   }
 }

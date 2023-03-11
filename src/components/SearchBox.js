@@ -1,30 +1,45 @@
-// import { useState } from "react";
+import { useState } from 'react';
+import Form from 'react-bootstrap';
 import '../styles/SearchBox.scss';
 
 export default function SearchBox() {
-  // const  [keyWord, setKeyWord] = useState('');
-  // const submitHandler = (e) => {
-  //     e.preventDefault();
-  //     //Start Searching
-  // }
+  const [keyWord, setKeyWord] = useState('');
+  const submitHandler = (e) => {
+    e.preventDefault();
+    alert(keyWord);
+    //Start Searching
+  };
   return (
     <div className="formSearchBar">
-      <div className="formSearchInput">
-        <div className="formInput">
-          <div className="formDropdown">All Categories V</div>
-          <div className="formVerticalDiv" />
-          <input
-            className="formInputKey"
-            placeholder="Search Product, categories..."
-          ></input>
-          <button className="formSearchIcon">
-            <img src="magnifier.png" alt="Search" />
-          </button>
-        </div>
-        <button className="formCartIcon">
-          <img src="cart.png" alt="Check Out" />
+      <form className="formSearchInput" onSubmit={submitHandler}>
+        <select
+          name="categoriesSearch"
+          id="categoriesSearch"
+          className="removeBorder padding-margin"
+          placeholder="Categories"
+        >
+          <option disabled selected hidden>
+            All Categories
+          </option>
+          <option>Item 1</option>
+          <option>Item 2</option>
+          <option>Item 3</option>
+        </select>
+        <div className="formVerticalDiv" />
+        <input
+          type="text"
+          name="keyword"
+          className="formInputKey"
+          placeholder="Search product, categories..."
+          onChange={(e) => setKeyWord(e.target.value)}
+        ></input>
+        <button className="formSearchIcon" type="submit">
+          <img src="magnifier.png" alt="Search" />
         </button>
-      </div>
+      </form>
+      <button className="formCartIcon">
+        <img src="cart.png" alt="Check Out" />
+      </button>
     </div>
   );
 }
