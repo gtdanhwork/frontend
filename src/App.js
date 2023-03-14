@@ -1,6 +1,8 @@
 import './App.css';
 import SearchBox from './components/SearchBox';
 import CategoriesMenu from './components/CategoriesMenu';
+import CategoriesScreen from './screens/CategoriesScreen';
+import CategoriesFilter from './components/CategoriesFilter';
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <CategoriesMenu />
       </header>
       <main>Tester</main>
+      <CategoriesScreen />
       <footer>
         <div className="leftFooter">
           <p>TMA</p>
